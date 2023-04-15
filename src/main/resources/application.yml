@@ -1,0 +1,21 @@
+  spring:
+    info:
+      build:
+        encoding: UTF-8
+        location: application.properties
+    datasource:
+      driver-class-name: org.postgresql.Driver
+      jdbc-url: jdbc:postgresql://localhost:5432/idthub
+      username: testuser1
+      password: 1234
+
+    jwt:
+      header: Authorization
+      secret: amFlc29vbkJvYXJkUHJvamVjdA==#jaesoonBoardProject
+    mvc:
+      pathmatch:
+        matching-strategy: ant_path_matcher
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+
